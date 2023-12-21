@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css ">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="main_heading"><center>PAYMENT FORM</center></h1>
+
+            <p class="instruction">Required fields are presented by *</p>
+
+            <div class="contact">
+                <h2>Contact Information</h2>
+                <hr class="line">
+                <!--Various type of input formats are shown here first text which take text input and then name is used to send the input data to server by that name so it must be unique to every input and here required is added to make this field necessary to be filled before submitting the form-->
+                <p> Name* : <input type="text" name="name" required></p>
+
+                <!--Next type of input format is radio which allow option of finite number choices with dot in which you can access only one site at one time and here name attribute should be same for every option input as it should sent it once only for one last selected one-->
+                <!--here fieldset form box combined for both male and female and legend show title for this box-->
+                <fieldset>
+                    <legend>Gender*</legend>
+                    <p> 
+                        Male <input type="radio" name="gender" id="male" required>
+                        Female <input type="radio" name="gender" id="female" required>
+                    </p>
+                </fieldset>
+
+                <p>Address : <textarea name="address" id="address" cols="79" rows="5" placeholder="Enter Your Address"></textarea></p>
+
+                <p>Email Id* : <input type="email" name ="email" id="email" placeholder="example@gmail.com" required ></p>
+                <p>Pincode : <input type="number" name="pincode" id="pincode"></p>
+            </div>
+            <hr>
+
+            <div class="payment">
+                <h2>Payment Information</h2>
+                <hr class="line">
+                <p>Card Type* :
+                    <select name="card_type" id="card_type" required>
+                        <option name="" required>--Select the Card--</option>
+                        <option name="visa" required>Visa</option>
+                        <option name="rupay" required>Rupay</option>
+                        <option name="master card" required>Master Card</option>
+                    </select>
+                </p>
+                <p>Card Number* : <input type="number" name="card_number" id="card_number" placeholder="1111-2222-3333-4444" required</p>
+                <p>Expiration Date* : <input type="date" name="exp_date" id="exp_date" required</p>
+                <p>CVV* : <input type="password" name="cvv" id="cvv" required></p>
+                <input type="submit" value="Pay Now" class="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
