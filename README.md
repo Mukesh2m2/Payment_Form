@@ -1,5 +1,6 @@
 # Payment Form
 - Web-D Mini Project
+- Website : https://mukesh2m2.github.io/Payment_Form/payment.html
 
 ## Features
 - Gives different varieties of input taking methods
